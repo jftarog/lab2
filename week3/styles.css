@@ -10,18 +10,22 @@
     margin: 20px;
 }
 /* For notes on lessons*/
-.note { 
-    background-color:rgba(154, 205, 50, 0.25);
+.note {
+    background-color:rgba(0, 255, 0, 0.5);
     border-radius: 25px;
     padding: 15px;
-    padding-left: 20px; 
+    padding-left: 20px;
     color: white;
     margin: 20px;
 }
-.city { 
-    background-color: tomato;
+.city {
+    background-color: dodgerblue;
     color: white;
-    border: 2px solid black;
+    border: 2px solid green;
+    border-radius: 10px;
     margin: 20px;
-    padding: 20px;
+    padding: 15px;
+}
+.cityTitle {
+    color:tomato;
 }
