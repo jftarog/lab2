@@ -29,3 +29,9 @@
 .cityTitle {
     color:tomato;
 }
+.bonjour {
+    background: url(../images/bonjour.png) no-repeat;
+    width: 640px;
+    height: 627px;
+    text-align: center;
+}
