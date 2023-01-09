@@ -1,15 +1,92 @@
+body {
+    background-color: #2C2F33;
+}
 #myHeader {
     background-color: lightblue;
+    display:block;
     color: black;
     padding: 40px;
     text-align: center;
     border-radius: 15px;
 }
-.profile {
-    color:white;
-    margin: 20px;
+
+
+
+/* ----- Profile ----- */
+#profile, .flip {
+    display: block;
+    /* border: solid 1px #a6d8a8; */
+    color: white;
+    padding: 10px 20px;
+    margin: auto;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    line-height: 1.5;
 }
-/* For notes on lessons*/
+div#profile p b {
+    color:skyblue;
+    font-size: 16px;
+    font-family: "Times New Roman", serif;
+}
+#profile {
+    display:none;
+}
+
+
+
+/* ----- Link Buttons ----- */
+.button {
+    transition: 0.2s;
+}
+a.button:link, a.button:visited {
+    color: white;
+    margin: 5px 20px;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: solid 2px yellowgreen;
+    border-radius: 5px;
+}
+a.button:hover, a.button:active {
+    background-color: red;
+}
+
+
+
+/* ----- Navigation Bar ----- */
+div.navbar {
+    margin-bottom: 10px;
+    border: solid 2px #53585f;
+    padding: 12px;
+    padding-left: 5px;
+}
+div.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+div.navbar ul li {
+    display: inline;
+}
+div.navbar ul li a {
+    background-color: #474c52;
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+}
+div.navbar ul li a:hover {
+    background-color: #111111;
+}
+div.navbar ul li a.active {
+    background-color: lightblue;
+    color: black;
+}
+
+
+
+/* ----- Lessons CSS ----- */
 .note {
     background-color:rgba(0, 255, 0, 0.5);
     border-radius: 25px;
