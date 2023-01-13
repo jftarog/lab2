@@ -10,7 +10,6 @@ function onClick() {
     };
 };
 
-
 function testFunction() {
     let flipElement = document.getElementsByClassName("flip");
     for(var i = 0; i < flipElement.length; ++i) {

@@ -31,6 +31,7 @@
 
     <h1 id="myHeader">Welcome to my website!</h1>
     <div class="flip"><a class="flip button" onclick="onClick()">Click me to show my profile!</a></div>
+    <p style="color:white;">It is currently <a id="demo"></a>.</p>
     <div id="profile">
         <p style="font-size: 25px;text-align: center;">Hi! Hello! I'm <b style="font-size:25px;">Jaycee (or just JC)</b></p>
         <p>
@@ -60,6 +61,8 @@
 
     <script>
         console.log(testFunction());
+        const d = new Date();
+        document.getElementById("demo").innerHTML = d.toDateString();
     </script>
 </body>
 </html>
