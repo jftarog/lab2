@@ -5,6 +5,11 @@
     <link rel="icon" type="image/x-icon" href="../images/aonahara.ico">
     <link rel="stylesheet" href="../css/styles.css">
     <script src="../js/script.js"></script>
+    <style>
+        body {
+            color:white;
+        }
+    </style>
 </head>
 <body>
     <div class="navbar"><ul>
@@ -88,8 +93,20 @@
     
     <a href="#" class="button">Back to top</a>
 
+
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
     <script>
-        console.log(testFunction());
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo").innerHTML = fruits.toString();
+        document.getElementById("demo2").innerHTML = fruits.join(" "); 
+        let fruit = fruits.pop();
+        document.getElementById("demo3").innerHTML = 
+            fruits.toString() + "<br>" + 
+            fruit;
+
+        
     </script>
 </body>
 </html>
