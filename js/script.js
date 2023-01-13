@@ -16,3 +16,8 @@ function testFunction() {
         console.log(flipElement[i])
     };
 };
+
+
+function displayDate(someID) {
+    document.getElementById(someID).innerHTML = Date();
+};
