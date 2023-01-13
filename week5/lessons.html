@@ -98,6 +98,7 @@
     <p id="demo2"></p>
     <p id="demo3"></p>
     <button onclick="displayDate('timeDemo')">The time is?</button><p id="timeDemo"></p>
+    <p id="greetingDemo"></p>
     <script>
         const fruits = ["Banana", "Orange", "Apple", "Mango"];
         document.getElementById("demo").innerHTML = fruits.toString();
@@ -106,6 +107,17 @@
         document.getElementById("demo3").innerHTML = 
             fruits.toString() + "<br>" + 
             fruit;
+        
+        const hour = new Date().getHours(); 
+        let greeting;
+
+        if (hour < 18) {
+            greeting = "Good day";
+        } else {
+            greeting = "Good evening";
+        };
+
+        document.getElementById("greetingDemo").innerHTML = greeting;
     </script>
 </body>
 </html>
