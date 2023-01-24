@@ -28,3 +28,14 @@ function testFunction() {
 function displayDate(someID) {
     document.getElementById(someID).innerHTML = Date();
 };
+
+
+const person = {
+    firstName: "James Christian",
+    lastName: "Tarog",
+    nickName: "Jaycee",
+    age: 19,
+    fullName: function() {
+        return this.firstName + " " + this.lastName;
+    }
+};
