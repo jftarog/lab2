@@ -30,16 +30,22 @@ function displayDate(someID) {
 };
 
 
-const person = {
-    firstName: "James Christian",
-    lastName: "Tarog",
-    nickName: "Jaycee",
-    age: 19,
-    get fullName() {
-        return this.firstName + " " + this.lastName;
-    },
-    language: "Filipino",
-    get lang(){
-        return this.language.toUpperCase;
-    }
+function Person(first,last,age,language){
+    this.firstName = first;
+    this.lastname = last,
+    this.age = age;
+    this.language = language;
+    // get fullName() {
+    //     return this.firstName + " " + this.lastName;
+    // },
+    // get lang(){
+    //     return this.language.toUpperCase;
+    // }
+};
+const jaycee = new Person("James Christian", "Tarog", 19, "Filipino");
+jaycee.fullname = function() {
+    return this.firstName + " " + this.lastName;
+};
+jaycee.lang = function() {
+    return this.language;
 };
