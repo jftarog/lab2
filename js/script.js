@@ -30,19 +30,18 @@ function displayDate(someID) {
 };
 
 
-function Person(first,last,age,language){
-    this.firstName = first;
-    this.lastname = last,
-    this.age = age;
-    this.language = language;
-    // get fullName() {
-    //     return this.firstName + " " + this.lastName;
-    // },
-    // get lang(){
-    //     return this.language.toUpperCase;
-    // }
+class Person {
+    constructor (first,last,year,language) {
+        this.firstName = first;
+        this.lastname = last,
+        this.language = language;
+    };
+    age() {
+        let date = new Date();
+        return date.getFullYear() - this.year;
+    };
 };
-const jaycee = new Person("James Christian", "Tarog", 19, "Filipino");
+const jaycee = new Person("James Christian", "Tarog", 2003, "Filipino");
 jaycee.fullname = function() {
     return this.firstName + " " + this.lastName;
 };
