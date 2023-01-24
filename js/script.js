@@ -35,7 +35,11 @@ const person = {
     lastName: "Tarog",
     nickName: "Jaycee",
     age: 19,
-    fullName: function() {
+    get fullName() {
         return this.firstName + " " + this.lastName;
+    },
+    language: "Filipino",
+    get lang(){
+        return this.language.toUpperCase;
     }
 };
