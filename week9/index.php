@@ -24,9 +24,10 @@
 </head>
 <body>
     <div class="navbar"><ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="lessons.html">W3Schools Lessons</a></li>
-        <li><a href="resources.html">Resources</a></li>
+        <li><a href="index.php" class="active">Home</a></li>
+        <li><a href="lessons.php">W3Schools Lessons</a></li>
+        <li><a href="resources.php">Resources</a></li>
+        <li><a href="validation_complete.php">Forms</a></li>
     </ul></div>
 
     <h1 id="myHeader">Welcome to my website!</h1>

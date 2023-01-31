@@ -2,11 +2,21 @@
 <!DOCTYPE HTML>  
 <html>
 <head>
-<style>
-.error {color: #FF0000;}
-</style>
+  <title>JC's Page</title>
+  <link rel="icon" type="image/x-icon" href="../images/aonahara.ico">
+  <link rel="stylesheet" href="../css/styles.css">
+  <script src="../js/script.js"></script>
+  <style>
+    .error {color: #FF0000;}
+  </style>
 </head>
-<body>  
+<body>
+<div class="navbar"><ul>
+  <li><a href="index.php">Home</a></li>
+  <li><a href="lessons.php">W3Schools Lessons</a></li>
+  <li><a href="resources.php">Resources</a></li>
+  <li><a href="validation_complete.php" class="active">Forms</a></li>
+</ul></div>
 
 <?php
 // define variables and set to empty values

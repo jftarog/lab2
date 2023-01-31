@@ -13,9 +13,10 @@
 </head>
 <body>
     <div class="navbar"><ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="lessons.html" class="active">W3Schools Lessons</a></li>
-        <li><a href="resources.html">Resources</a></li>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="lessons.php" class="active">W3Schools Lessons</a></li>
+        <li><a href="resources.php">Resources</a></li>
+        <li><a href="validation_complete.php">Forms</a></li>
     </ul></div>
     
     <h1 id="Lessons">Lessons</h1>
