@@ -5,11 +5,6 @@
     <link rel="icon" type="image/x-icon" href="../images/aonahara.ico">
     <link rel="stylesheet" href="../css/styles.css">
     <script src="../js/script.js"></script>
-    <style>
-        body {
-            color:white;
-        }
-    </style>
 </head>
 <body>
     <?php include('navigation.php') ?>
