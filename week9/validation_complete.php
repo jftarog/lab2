@@ -8,7 +8,6 @@
   <script src="../js/script.js"></script>
   <style>
     .error {color: #FF0000;}
-    body {color: white;}
   </style>
 </head>
 <body>
