@@ -19,7 +19,7 @@
     // database for apcwebprog server
     $username = "webprogss211";
     $password = "webprogss211";
-    $dbname = "jftarog_myguests";
+    $dbname = "webprogss211";
 
     // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);

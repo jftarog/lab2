@@ -1,4 +1,3 @@
-
 <!DOCTYPE HTML>  
 <html>
 <head>
@@ -120,7 +119,7 @@ function test_input($data) {
     // database for apcwebprog server
     $username = "webprogss211";
     $password = "webprogss211";
-    $dbname = "jftarog_myguests";
+    $dbname = "webprogss211";
 
 
     // Create connection
@@ -130,9 +129,8 @@ function test_input($data) {
       die("Connection failed: " . $conn->connect_error);
     }
     
-    // this is just using the existing table, inserting the full name into the "firstname" column, and leaving "lastname" empty.
-    $sql = "INSERT INTO jftarog_myguests (firstname, lastname, email)
-    VALUES ('$name', ' ', '$email')";
+    $sql = "INSERT INTO jftarog_myguests (name, email, website, comment, gender)
+    VALUES ('$name','$email','$website','$comment','$gender')";
 
     if ($conn->query($sql) === TRUE) {
       echo "New record created successfully";
