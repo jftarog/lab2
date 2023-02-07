@@ -11,9 +11,15 @@
 
 <?php
     $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "webprogss211db";
+    // root database for when testing locally
+    // $username = "root";
+    // $password = "";
+    // $dbname = "webprogss211db";
+    
+    // database for apcwebprog server
+    $username = "webprogss211";
+    $password = "webprogss211";
+    $dbname = "jftarog_myguests";
 
     // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);
