@@ -110,10 +110,18 @@ function test_input($data) {
 <?php
   // will only execute after the "Submit" button is pressed
   if ($_SERVER["REQUEST_METHOD"] == "POST") { 
+    
     $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "webprogss211db";
+    // root database for when testing locally
+    // $username = "root";
+    // $password = "";
+    // $dbname = "webprogss211db";
+    
+    // database for apcwebprog server
+    $username = "webprogss211";
+    $password = "webprogss211";
+    $dbname = "jftarog_myguests";
+
 
     // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);
@@ -121,8 +129,9 @@ function test_input($data) {
     if ($conn->connect_error) {
       die("Connection failed: " . $conn->connect_error);
     }
+    
     // this is just using the existing table, inserting the full name into the "firstname" column, and leaving "lastname" empty.
-    $sql = "INSERT INTO MyGuests (firstname, lastname, email)
+    $sql = "INSERT INTO jftarog_myguests (firstname, lastname, email)
     VALUES ('$name', ' ', '$email')";
 
     if ($conn->query($sql) === TRUE) {
