@@ -100,17 +100,46 @@ function test_input($data) {
 </form>
 
 <?php
-echo "<h2>Your Input:</h2>";
-echo $name;
-echo "<br>";
-echo $email;
-echo "<br>";
-echo $website;
-echo "<br>";
-echo $comment;
-echo "<br>";
-echo $gender;
+  echo "<h2>Your Input:</h2>";
+  echo $name;
+  echo "<br>";
+  echo $email;
+  echo "<br>";
+  echo $website;
+  echo "<br>";
+  echo $comment;
+  echo "<br>";
+  echo $gender;
 ?>
+
+<!-- Insert Data -->
+<?php
+  // will only execute after the "Submit" button is pressed
+  if ($_SERVER["REQUEST_METHOD"] == "POST") { 
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "webprogss211db";
+
+    // Create connection
+    $conn = new mysqli($servername, $username, $password, $dbname);
+    // Check connection
+    if ($conn->connect_error) {
+      die("Connection failed: " . $conn->connect_error);
+    }
+    // this is just using the existing table, inserting the full name into the "firstname" column, and leaving "lastname" empty.
+    $sql = "INSERT INTO MyGuests (firstname, lastname, email)
+    VALUES ('$name', ' ', '$email')";
+
+    if ($conn->query($sql) === TRUE) {
+      echo "New record created successfully";
+    } else {
+      echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+
+    $conn->close();
+  }
+?> 
 
 </body>
 </html>
