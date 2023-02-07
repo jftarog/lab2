@@ -12,12 +12,7 @@
   </style>
 </head>
 <body>
-<div class="navbar"><ul>
-  <li><a href="index.php">Home</a></li>
-  <li><a href="lessons.php">W3Schools Lessons</a></li>
-  <li><a href="resources.php">Resources</a></li>
-  <li><a href="validation_complete.php" class="active">Forms</a></li>
-</ul></div>
+  <?php include('navigation.php') ?>
 
 <?php
 // define variables and set to empty values

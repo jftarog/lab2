@@ -27,12 +27,7 @@
     </style>
 </head>
 <body>
-    <div class="navbar"><ul>
-        <li><a href="index.php">Home</a></li>
-        <li><a href="lessons.php">W3Schools Lessons</a></li>
-        <li><a href="resources.php" class="active">Resources</a></li>
-        <li><a href="validation_complete.php">Forms</a></li>
-    </ul></div>
+    <?php include('navigation.php') ?>
 
     <p>
         All lines of code used in this website are some variation of what was taught in <a href="https://www.w3schools.com/">W3Schools' HTML, CSS, JavaScript, and PHP Tutorials</a>.

@@ -12,12 +12,7 @@
     </style>
 </head>
 <body>
-    <div class="navbar"><ul>
-        <li><a href="index.php">Home</a></li>
-        <li><a href="lessons.php" class="active">W3Schools Lessons</a></li>
-        <li><a href="resources.php">Resources</a></li>
-        <li><a href="validation_complete.php">Forms</a></li>
-    </ul></div>
+    <?php include('navigation.php') ?>
     
     <h1 id="Lessons">Lessons</h1>
     <h3>This is heading 3</h3>     

@@ -23,12 +23,7 @@
     </style>
 </head>
 <body>
-    <div class="navbar"><ul>
-        <li><a href="index.php" class="active">Home</a></li>
-        <li><a href="lessons.php">W3Schools Lessons</a></li>
-        <li><a href="resources.php">Resources</a></li>
-        <li><a href="validation_complete.php">Forms</a></li>
-    </ul></div>
+    <?php include('navigation.php') ?>
 
     <h1 id="myHeader">Welcome to my website!</h1>
     <div class="flip"><a class="flip button" onclick="onClick()">Click me to show my profile!</a></div>
